@@ -23,24 +23,24 @@ public class KataFizBuz {
         return Integer.toString(number);
     }
     @Test
-    public void getResultatNombreDivisibleParTrois() {
+    public void getResultatNombreDivisibleParTrois() { //tester pour la division sur 3
         Assert.assertEquals("fizz", KataFizBuz.getResultat(3));
     }
  
     @Test
-    public void getResultatNombreDivisiblePar5() {
+    public void getResultatNombreDivisiblePar5() {  //tester pour la division sur 5
         Assert.assertEquals("buzz", KataFizBuz.getResultat(5));
         Assert.assertEquals("buzz", KataFizBuz.getResultat(10));
     }
  
     @Test
-    public void getResultatNombreDivisiblePar15() {
+    public void getResultatNombreDivisiblePar15() {  //tester pour la division sur 15
         Assert.assertEquals("fizzbuzz", KataFizBuz.getResultat(15));
         Assert.assertEquals("fizzbuzz", KataFizBuz.getResultat(30));
     }
  
     @Test
-    public void getResultatNombreNonDivisibleParTous() {
+    public void getResultatNombreNonDivisibleParTous() {  //teste si n'est pas divisble pour les 3 nombres
         Assert.assertEquals("1", KataFizBuz.getResultat(1));
         Assert.assertEquals("2", KataFizBuz.getResultat(2));
         Assert.assertEquals("4", KataFizBuz.getResultat(4));
